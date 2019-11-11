@@ -1,7 +1,5 @@
 #!/bin/bash
 
-GITHUB_USER=milaq
-
 set -e
 mkdir -p tmp/
 
@@ -10,9 +8,9 @@ function get_addon_data_github {
   repo_name=$2
   version=$3
   mkdir -p pool/$kodi_name/
-  wget https://github.com/$GITHUB_USER/$repo_name/archive/$version.zip -O tmp/addon.zip
+  wget https://github.com/$repo_name/archive/$version.zip -O tmp/addon.zip
   mv tmp/addon.zip pool/$kodi_name/$kodi_name-$version.zip
-  wget https://raw.githubusercontent.com/$GITHUB_USER/$repo_name/$version/addon.xml -O tmp/addon.xml
+  wget https://raw.githubusercontent.com/$repo_name/$version/addon.xml -O tmp/addon.xml
   cat tmp/addon.xml | tail -n +2 >> addons.xml
 }
 
@@ -43,8 +41,8 @@ function get_repo_data {
 gen_xml_header
 
 get_repo_data repository.milaq 1.0.0
-get_addon_data_github service.blackbarsremover kodi_addon_blackbarsremover 2.1.1
-get_addon_data_github screensaver.fanart.slideshow kodi_screensaver_fanart_slideshow 0.9.0
+get_addon_data_github service.blackbarsremover milaq/kodi_addon_blackbarsremover 2.1.1
+get_addon_data_github screensaver.fanart.slideshow milaq/kodi_screensaver_fanart_slideshow 0.9.0
 
 gen_xml_footer
 gen_checksum
