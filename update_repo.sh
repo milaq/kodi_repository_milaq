@@ -43,6 +43,7 @@ gen_xml_header
 get_repo_data repository.milaq 1.0.0
 get_addon_data_github service.blackbarsremover milaq/kodi_addon_blackbarsremover 2.1.1
 get_addon_data_github screensaver.fanart.slideshow milaq/kodi_screensaver_fanart_slideshow 0.9.0
+get_addon_data_github resource.uisounds.nebula.mlq milaq/kodi_uisounds_nebula_mlq 1.0.0
 
 gen_xml_footer
 gen_checksum

@@ -163,4 +163,15 @@
 		</assets>
 	</extension>
 </addon>
+<addon id="resource.uisounds.nebula.mlq" version="1.0.0" name="Nebula UI Sounds (MLQ)" provider-name="milaq">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Nebula GUI sounds (MLQ)</summary>
+    <description lang="en">Nebula GUI sounds (MLQ modded version)</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
