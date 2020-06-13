@@ -43,7 +43,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="screensaver.fanart.slideshow" name="Fanart Slideshow Screensaver" version="0.9.2" provider-name="milaq">
+<addon id="screensaver.fanart.slideshow" name="Fanart Slideshow Screensaver" version="0.9.3" provider-name="milaq">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 	</requires>
@@ -157,7 +157,7 @@
 		<forum>https://forum.kodi.tv/showthread.php?tid=154032</forum>
 		<source>https://gitlab.com/ronie/screensaver.picture.slideshow</source>
 		<assets>
-			<icon>resources/icon.png</icon>
+			<icon>resources/icon.jpg</icon>
 			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 	</extension>
