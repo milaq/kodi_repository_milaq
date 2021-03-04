@@ -1,5 +1,5 @@
 [![](http://kodi.wiki/images/4/43/Side-by-side-dark-transparent.png)](https://kodi.tv/)
 
-# milaq's Kodi repository for addons
+# milaq's addon repository for Kodi 18 (Leia)
 
 Install the <a href="https://github.com/milaq/kodi_repository_milaq/raw/leia/pool/repository.milaq/repository.milaq-2.0.0.zip">repository package</a> via `Settings`>`Add-ons`>`Install from zip file`
