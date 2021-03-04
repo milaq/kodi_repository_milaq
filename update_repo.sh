@@ -4,12 +4,12 @@ set -e
 mkdir -p tmp/
 
 function get_addon_data_github {
-  kodi_name=$1
+  package_name=$1
   repo_name=$2
   version=$3
-  mkdir -p pool/$kodi_name/
+  mkdir -p pool/$package_name/
   wget https://github.com/$repo_name/archive/$version.zip -O tmp/addon.zip
-  mv tmp/addon.zip pool/$kodi_name/$kodi_name-$version.zip
+  mv tmp/addon.zip pool/$package_name/$package_name-$version.zip
   wget https://raw.githubusercontent.com/$repo_name/$version/addon.xml -O tmp/addon.xml
   cat tmp/addon.xml | tail -n +2 >> addons.xml
 }
@@ -28,19 +28,19 @@ function gen_checksum {
 }
 
 function get_repo_data {
-  kodi_name=$1
+  package_name=$1
   version=$2
-  mkdir -p pool/$kodi_name/
+  mkdir -p pool/$package_name/
   pushd dist
-  zip -o -r ../pool/$kodi_name/$kodi_name-$version.zip $kodi_name/
+  zip -o -r ../pool/$package_name/$package_name-$version.zip $package_name/
   popd
-  cat dist/$kodi_name/addon.xml > tmp/addon.xml
+  cat dist/$package_name/addon.xml > tmp/addon.xml
   cat tmp/addon.xml | tail -n +2 >> addons.xml
 }
 
 gen_xml_header
 
-get_repo_data repository.milaq 1.0.0
+get_repo_data repository.milaq 2.0.0
 get_addon_data_github service.blackbarsremover milaq/kodi_addon_blackbarsremover 2.1.1
 get_addon_data_github screensaver.fanart.slideshow milaq/kodi_screensaver_fanart_slideshow 0.9.3
 get_addon_data_github resource.uisounds.nebula.mlq milaq/kodi_uisounds_nebula_mlq 1.0.0
