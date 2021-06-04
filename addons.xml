@@ -74,4 +74,30 @@
 		</assets>
 	</extension>
 </addon>
+<addon 
+    id="service.odroid.screenoff"
+    name="ODROID Screen Off"
+    version="1.0.0"
+    provider-name="milaq">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">Automatically turns off the display after screensaver activation (with delay) for ODROID devices</summary>
+        <description lang="en_gb">ODROID devices with Coreelec can't do DPMS screen standby. If the attached display doesn't support CEC power management, there is only the option left to turn off the HMDI output. Compatible ODROID models: C2, C4, N2. This addon relies on HAVING A KODI SCREENSAVER ENABLED. Make sure to enable any screensaver.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <forum></forum>
+        <website>https://milaq.net</website>
+        <email></email>
+        <source>https://github.com/milaq/kodi_addon_odroid_screenoff</source>
+        <news></news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
+        </assets>
+    </extension>
+</addon>
 </addons>

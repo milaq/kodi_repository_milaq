@@ -45,6 +45,7 @@ get_repo_data repository.milaq matrix 2.0.0
 get_addon_data_github service.blackbarsremover milaq/kodi_addon_blackbarsremover 3.0.0
 get_addon_data_github resource.uisounds.nebula.mlq milaq/kodi_uisounds_nebula_mlq 1.0.0
 get_addon_data_github screensaver.fanart.slideshow milaq/kodi_screensaver_fanart_slideshow 0.9.6
+get_addon_data_github service.odroid.screenoff milaq/kodi_addon_odroid_screenoff 1.0.0
 
 gen_xml_footer
 gen_checksum
