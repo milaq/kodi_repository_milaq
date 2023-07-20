@@ -1,12 +1,17 @@
-<?xml version=1.0 encoding=UTF-8 standalone=yes?>
+<?xml version=/1.0/ encoding=/UTF-8/ standalone=/yes/?>
 <addons>
-<addon id="repository.milaq" name="milaq's Kodi addons" version="2.0.0" provider-name="milaq">
+<addon id="repository.milaq" name="milaq's Kodi addons" version="3.0.0" provider-name="milaq">
     <extension point="xbmc.addon.repository" name="milaq's Kodi addons">
-        <dir>
-            <info>https://github.com/milaq/kodi_repository_milaq/raw/matrix/addons.xml</info>
-            <checksum>https://github.com/milaq/kodi_repository_milaq/raw/matrix/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/milaq/kodi_repository_milaq/raw/matrix/pool</datadir>
+		<dir minversion="18.0.0">
+            <info compressed="false">https://github.com/milaq/kodi_repository_milaq/raw/master/dists/leia/addons.xml</info>
+            <checksum>https://github.com/milaq/kodi_repository_milaq/raw/master/dists/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/milaq/kodi_repository_milaq/raw/master/dists/leia</datadir>
         </dir>
+        <dir minversion="19.0.0">
+            <info compressed="false">https://github.com/milaq/kodi_repository_milaq/raw/master/dists/matrix/addons.xml</info>
+            <checksum>https://github.com/milaq/kodi_repository_milaq/raw/master/dists/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/milaq/kodi_repository_milaq/raw/master/dists/matrix</datadir>
+		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>milaq's Kodi addons</summary>
@@ -14,6 +19,32 @@
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon 
+    id="service.blackbarsremover"
+    name="Black Bars Remover"
+    version="3.0.0"
+    provider-name="milaq">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">Automatically fit video to screen</summary>
+        <description lang="en_gb">Automatically adjusts the zoomlevel to eliminate black bars in videos. This addon also respects Kodi's "minimise black bars" setting.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <forum></forum>
+        <website>https://milaq.net</website>
+        <email></email>
+        <source>https://github.com/milaq/kodi_addon_blackbarsremover</source>
+        <news></news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
         </assets>
     </extension>
 </addon>
