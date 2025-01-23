@@ -67,7 +67,7 @@ echo "Generating repo data for Kodi Matrix..."
 mkdir -p dists/matrix
 gen_xml_header matrix
 get_self_repo_data matrix
-get_addon_data_github matrix service.blackbarsremover milaq/kodi_addon_blackbarsremover "3.0.0" "3.1.0"
+get_addon_data_github matrix service.blackbarsremover milaq/kodi_addon_blackbarsremover "3.0.0" "3.1.0" "3.2.0"
 get_addon_data_github matrix resource.uisounds.nebula.mlq milaq/kodi_uisounds_nebula_mlq "1.0.0"
 get_addon_data_github matrix screensaver.fanart.slideshow milaq/kodi_screensaver_fanart_slideshow "0.9.6"
 get_addon_data_github matrix service.odroid.screenoff milaq/kodi_addon_odroid_screenoff "1.1.0"
